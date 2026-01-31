@@ -20,9 +20,11 @@
     <span class="tagline">Crescens Anima</span>
   </div>
 
-  <button id="menuBtn" class="menu-btn">≡ Materi</button>
+  <button class="menu-btn" id="menuBtn">≡ Materi</button>
+</nav>
 
- <div id="dropdownMenu" class="dropdown-content">
+<!-- DROPDOWN -->
+<div class="dropdown-content" id="dropdownMenu">
   <a href="#m1">Pengantar & Ketidakpastian</a>
   <a href="#m2">Ruang Sampel & Kejadian</a>
   <a href="#m3">Aksioma Probabilitas</a>
@@ -37,7 +39,7 @@
   <a href="#m12">Varians & Simpangan Baku</a>
   <a href="#m13">Review Akhir</a>
 </div>
-</nav>
+
 
 <!-- ============ HERO / JUDUL ============ -->
 <section class="hero">
@@ -205,6 +207,28 @@
     });
   });
 </script>
-  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("dropdownMenu");
+
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      menu.classList.toggle("show");
+    });
+
+    // klik menu → nutup
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("show");
+      });
+    });
+
+    // klik luar → nutup
+    document.addEventListener("click", function () {
+      menu.classList.remove("show");
+    });
+  });
+</script>
 </body>
 </html>
