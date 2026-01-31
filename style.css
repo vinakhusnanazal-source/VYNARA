@@ -74,24 +74,27 @@ body {
 .dropdown-content.show {
   display: block;
 }
-/* ITEM DROPDOWN (INI YANG MEMPERBAIKI SUSUNAN) */
+/* ===== ITEM DROPDOWN (WAJIB) ===== */
 .dropdown-content a {
-  display: block;                 /* KUNCI UTAMA */
-  padding: 0.9rem 1.1rem;
-  text-decoration: none;
-  color: #1b4332;
+  display: block;                 /* tiap item satu baris */
+  padding: 0.9rem 1.2rem;         /* jarak nyaman disentuh */
+  text-decoration: none;          /* hilangkan underline */
+  color: #1b4332;                 /* konsisten dengan tema */
   font-size: 0.95rem;
-  line-height: 1.4;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee;  /* pemisah antar item */
 }
 
+/* item terakhir tanpa garis */
 .dropdown-content a:last-child {
   border-bottom: none;
 }
 
+/* efek hover */
 .dropdown-content a:hover {
   background: #d8f3dc;
 }
+
+
 /* ===== HERO ===== */
 .hero {
     display: flex;
