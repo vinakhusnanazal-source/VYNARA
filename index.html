@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-  <a href="#top" class="back-to-top">⬆</a>a>
+  
 <body id="top">
 
 <!-- ============ NAVBAR ============ -->
@@ -173,6 +173,18 @@
         Design & Content by <strong>VINA KHUSNA</strong> • Built with ❤️ using HTML & CSS | Hosted on GitHub Pages
   </small>
 </footer>
+<a href="#top" id="backToTop" class="back-to-top">⬆</a>
+<script>
+    const backToTop = document.getElementById("backToTop");
 
+    window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+                  backToTop.classList.add("show");
+          } else {
+                  backToTop.classList.remove("show");
+          }
+    });
+</script>
+</script>
 </body>
 </html>
