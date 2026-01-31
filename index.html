@@ -15,25 +15,29 @@
 
 <!-- ============ NAVBAR ============ -->
 <nav class="navbar">
-  <div class="logo">Vynara 🌿| Crescens Anima</div>
-
-  <button class="menu-btn" id="menuBtn">≡ Materi</button>
-
-  <div class="dropdown-content" id="dropdownMenu">
-    <a href="#m1">Pengantar & Ketidakpastian</a>
-    <a href="#m2">Ruang Sampel & Kejadian</a>
-    <a href="#m3">Aksioma Probabilitas</a>
-    <a href="#m4">Kejadian Gabungan</a>
-    <a href="#m5">Probabilitas Bersyarat</a>
-    <a href="#m6">Teorema Bayes</a>
-    <a href="#m7">Review & Latihan</a>
-    <a href="#m8">Variabel Acak Diskrit</a>
-    <a href="#m9">Distribusi Diskrit</a>
-    <a href="#m10">Variabel Acak Kontinu</a>
-    <a href="#m11">Nilai Harapan</a>
-    <a href="#m12">Varians & Simpangan Baku</a>
-    <a href="#m13">Review Akhir</a>
+  <div class="logo">
+    <span class="brand">Vynara 🌿</span>
+    <span class="divider">|</span>
+    <span class="tagline">Crescens Anima</span>
   </div>
+
+  <button id="menuBtn" class="menu-btn">≡ Materi</button>
+
+ <div id="dropdownMenu" class="dropdown-content">
+  <a href="#m1">Pengantar & Ketidakpastian</a>
+  <a href="#m2">Ruang Sampel & Kejadian</a>
+  <a href="#m3">Aksioma Probabilitas</a>
+  <a href="#m4">Kejadian Gabungan</a>
+  <a href="#m5">Probabilitas Bersyarat</a>
+  <a href="#m6">Teorema Bayes</a>
+  <a href="#m7">Review & Latihan</a>
+  <a href="#m8">Variabel Acak Diskrit</a>
+  <a href="#m9">Distribusi Diskrit</a>
+  <a href="#m10">Variabel Acak Kontinu</a>
+  <a href="#m11">Nilai Harapan</a>
+  <a href="#m12">Varians & Simpangan Baku</a>
+  <a href="#m13">Review Akhir</a>
+</div>
 </nav>
 
 <!-- ============ HERO / JUDUL ============ -->
@@ -182,29 +186,26 @@
     });
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-          const menuBtn = document.getElementById("menuBtn");
-          const dropdown = document.getElementById("dropdownMenu");
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const dropdown = document.getElementById("dropdownMenu");
 
-          menuBtn.addEventListener("click", function () {
-                  dropdown.classList.toggle("show");
-          });
+    if (!menuBtn || !dropdown) return;
 
-          // tutup setelah klik menu
-          dropdown.querySelectorAll("a").forEach(link => {
-                  link.addEventListener("click", () => {
-                            dropdown.classList.remove("show");
-                  });
-          });
-
-          // klik di luar = tutup
-          document.addEventListener("click", (e) => {
-                  if (!menuBtn.contains(e.target) && !dropdown.contains(e.target)) {
-                            dropdown.classList.remove("show");
-                  }
-          });
+    menuBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle("show");
     });
+
+    dropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+
+    document.addEventListener("click", function () {
+      dropdown.classList.remove("show");
+    });
+  });
 </script>
-</script>
+  
 </body>
 </html>
