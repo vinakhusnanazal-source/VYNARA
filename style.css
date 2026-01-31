@@ -1,60 +1,60 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f6fff8;
-  color: #1b4332;
+    font-family: 'Poppins', sans-serif;
+    background: #f6fff8;
+    color: #1b4332;
 }
 
 /* ===== NAVBAR ===== */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 1rem 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(90deg, #1b4332, #40916c);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1b4332, #40916c);
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: white;
 }
 
 .brand {
-  font-weight: 700;
-  font-size: 1.2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .tagline {
-  font-size: 0.9rem;
-  opacity: 0.9;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 /* BUTTON */
 .menu-btn {
-  background: #1b4332;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.4rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  cursor: pointer;
+    background: #1b4332;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    cursor: pointer;
 }
 .menu-wrapper {
-  position: relative; /* ANCHOR dropdown */
+    position: relative; /* ANCHOR dropdown */
 }
 /* ===== DROPDOWN ===== */
 .dropdown-content {
@@ -77,100 +77,100 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 8%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 8%;
 }
 
 .hero-card {
-  background: linear-gradient(135deg, #74c69d, #b7e4c7);
-  padding: 3rem;
-  border-radius: 20px;
-  text-align: center;
-  max-width: 800px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    background: linear-gradient(135deg, #74c69d, #b7e4c7);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
 /* ===== MATERI ===== */
 .materi {
-  padding: 3rem 8%;
+    padding: 3rem 8%;
 }
 
 .materi-card {
-  scroll-margin-top: 110px;
-  background: #e9fdf0;
-  border-left: 6px solid #52b788;
-  padding: 2rem;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    scroll-margin-top: 110px;
+    background: #e9fdf0;
+    border-left: 6px solid #52b788;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 /* ===== FOOTER ===== */
 footer {
-  background: #1b4332;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
+    background: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 
 footer small {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  opacity: 0.8;
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 /* ===== BACK TO TOP ===== */
 .back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 48px;
-  height: 48px;
-  background: #2d6a4f;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.4rem;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-  z-index: 999;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: #2d6a4f;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .back-to-top.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .logo {
-    display: grid;
-    grid-auto-flow: row;
-    gap: 4px;
-  }
+    .logo {
+          display: grid;
+          grid-auto-flow: row;
+          gap: 4px;
+    }
 
   .brand {
-    font-size: 1.15rem;
+        font-size: 1.15rem;
   }
 
   .tagline {
-    font-size: 0.75rem;
+        font-size: 0.75rem;
   }
 
   .hero-card {
-    padding: 2rem 1.5rem;
+        padding: 2rem 1.5rem;
   }
 
   .materi-card {
-    padding: 1.5rem;
+        padding: 1.5rem;
   }
 }
