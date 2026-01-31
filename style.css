@@ -53,17 +53,19 @@ body {
   font-size: 0.95rem;
   cursor: pointer;
 }
-
+.menu-wrapper {
+  position: relative; /* ANCHOR dropdown */
+}
 /* ===== DROPDOWN ===== */
 .dropdown-content {
-  position: fixed;
-  top: 90px;
-  left: 16px;
-  right: 16px;
+  position: absolute;
+  top: calc(100% + 12px); /* tepat di bawah tombol */
+  right: 0;
   background: white;
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.25);
   display: none;
+  width: 280px;
   max-height: 60vh;
   overflow-y: auto;
   z-index: 9999;
@@ -71,18 +73,6 @@ body {
 
 .dropdown-content.show {
   display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 1rem;
-  color: #1b4332;
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
-}
-
-.dropdown-content a:last-child {
-  border-bottom: none;
 }
 
 /* ===== HERO ===== */
