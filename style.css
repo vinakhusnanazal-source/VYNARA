@@ -54,26 +54,55 @@ body {
 
 /* mode HP */
 @media (max-width: 768px) {
+   .menu-btn {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+            border-radius: 20px;
+      }
+   .logo {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.75rem;
+  align-items: center;
+  color: white;
+  white-space: nowrap; /* PENTING */
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+/* divider | palsu */
+.tagline::before {
+  content: "|";
+  position: absolute;
+  left: 0;
+  opacity: 0.6;
+}
+  @media (max-width: 768px) {
   .logo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;              /* JANGAN besar */
-  }
-
-  .brand {
-    font-size: 1.15rem;    /* tetap dominan */
-    line-height: 1.2;
-  }
-
-  .divider {
-    display: none;         /* HILANGIN | */
+    grid-auto-flow: row;
+    gap: 2px;
+    white-space: normal;
   }
 
   .tagline {
-    font-size: 0.75rem;    /* jadi tagline beneran */
-    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+    padding-left: 0;
     opacity: 0.8;
-    margin-left: 2px;
+  }
+
+  .tagline::before {
+    display: none; /* HILANGKAN | */
   }
 }
 .menu-btn {
