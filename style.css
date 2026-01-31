@@ -20,7 +20,41 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
   font-weight: 700;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+}
+
+/* default: desktop */
+.divider {
+  display: inline;
+}
+
+.tagline {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* mode HP */
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
 }
 .menu-btn {
   background: #1b4332;
@@ -31,14 +65,15 @@ body {
   font-size: 0.95rem;
 }
 
+/* dropdown */
 .dropdown-content {
   position: fixed;
-  top: 80px;
+  top: 90px;
   left: 16px;
   right: 16px;
   background: white;
   border-radius: 16px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
   display: none;
   max-height: 60vh;
   overflow-y: auto;
@@ -52,12 +87,9 @@ body {
 .dropdown-content a {
   display: block;
   padding: 1rem;
-  text-decoration: none;
   color: #1b4332;
+  text-decoration: none;
   border-bottom: 1px solid #eee;
-}
-
-
 }
 /* ===== DROPDOWN ===== */
 .dropdown {
@@ -179,7 +211,9 @@ html {
 .materi {
   padding: 3rem 8%;
 }
-
+.materi-card {
+  scroll-margin-top: 110px;
+}
 .materi-card {
   background: #e9fdf0;
   border-left: 6px solid #52b788;
