@@ -63,11 +63,12 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* sembunyikan checkbox */
+/* Hilangkan checkbox toggle dropdown */
 #toggle-menu {
-  display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
-
 /* dropdown default tersembunyi */
 .dropdown-content {
   display: none;
@@ -85,6 +86,29 @@ body {
 /* tampil saat diklik */
 #toggle-menu:checked + .dropbtn + .dropdown-content {
   display: block;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background: #2d6a4f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.3s, background 0.3s;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background: #1b4332;
+  transform: translateY(-5px);
 }
 /* ===== HERO ===== */
 .hero {
@@ -138,4 +162,10 @@ footer {
     left: 0;
     right: auto;
   }
+}
+footer small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
 }
