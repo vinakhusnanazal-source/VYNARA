@@ -22,7 +22,46 @@ body {
 .logo {
   font-weight: 700;
 }
+.menu-btn {
+    background: #1b4332;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
 
+/* dropdown default */
+.dropdown-content {
+    position: fixed;
+    top: 70px;
+    right: 16px;
+    left: 16px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: none;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+/* aktif */
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    color: #1b4332;
+    text-decoration: none;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
 /* ===== DROPDOWN ===== */
 .dropdown {
   position: relative;
@@ -170,7 +209,16 @@ footer {
   .hero-card {
     padding: 2rem;
   }
+@media (max-width: 768px) {
+  .hero-card {
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+  }
 
+  .materi-card {
+    padding: 1.5rem;
+  }
+}
   .dropdown-content {
     left: 0;
     right: auto;
