@@ -402,38 +402,52 @@ footer small {
 }
 
 /* ===== NAVIGASI BAWAH ===== */
+/* ===============================
+   SAMAKAN LEBAR DENGAN CARD
+================================ */
+.materi,
+.nav-bawah {
+  max-width: 960px;        /* samakan dengan lebar card */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===============================
+   NAV BAWAH - DESKTOP
+================================ */
 .nav-bawah {
   display: flex;
-  justify-content: flex-end; /* kiri & kanan */
+  justify-content: flex-end; /* kanan */
   align-items: center;
-    
-  gap: 1.5rem;
+  gap: 1rem;
 
-  margin-top: 1rem !important;    /* dekat card terakhir */
-  margin-bottom: 3rem;            /* ruang kosong di BAWAH tombol */
-
-  padding: 0;
-}
-/* kiri */
-.nav-left {
-      margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-/* kanan */
-.nav-right {
-      margin-left: auto;
+/* ===============================
+   TOMBOL
+================================ */
+.menu-btn {
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
-/* ===== MOBILE ===== */
+
+/* ===============================
+   MOBILE (OPS I 2: TENGAH)
+================================ */
 @media (max-width: 768px) {
 
-  .materi-card:last-child {
-    margin-bottom: 0 !important;
+  .nav-bawah {
+    justify-content: center; /* TENGAH */
+    padding: 0 1rem;
+    margin-top: 0;
+    margin-bottom: 3.5rem;  /* aman dari bottom layar */
   }
 
-  .nav-bawah {
-    margin-top: 0 !important;
-    margin-bottom: 3.5rem;  /* ruang aman dari bottom layar */
-  }
 }
 
 .table-wrapper {
