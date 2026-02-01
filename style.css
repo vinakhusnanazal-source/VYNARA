@@ -383,3 +383,12 @@ footer small {
 .nav-right {
       margin-left: auto;
 }
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;     /* biar bisa geser kalau perlu */
+}
+
+table {
+  width: 100%;          /* paksa full container */
+  border-collapse: collapse;
+}
