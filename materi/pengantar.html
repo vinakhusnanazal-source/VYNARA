@@ -310,29 +310,30 @@
   <a href="#top" id="backToTop" class="back-to-top">⬆</a>
 
 <!-- BACK TO TOP -->
+<!-- BACK TO TOP -->
 <script>
 const backToTop = document.getElementById("backToTop");
 window.addEventListener("scroll", () => {
   backToTop.classList.toggle("show", window.scrollY > 300);
 });
-</script>  
+</script>
 <script>
-const backToTopBtn = document.getElementById("backToTop");
-const footer = document.getElementById("footer");
+  const backToTopBtn = document.getElementById("backToTop");
+  const footer = document.getElementById("footer");
 
-window.addEventListener("scroll", () => {
-  const footerRect = footer.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
+  window.addEventListener("scroll", () => {
+      const footerRect = footer.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
 
-  if (footerRect.top < windowHeight) {
-    // footer mulai terlihat
-    backToTopBtn.style.position = "absolute";
-    backToTopBtn.style.bottom =
-      footer.offsetHeight + 20 + "px";
-  } else {
-    // normal
-    backToTopBtn.style.position = "fixed";
-    backToTopBtn.style.bottom = "30px";
-  }
-});
+      if (footerRect.top < windowHeight) {
+            // footer mulai terlihat
+            backToTopBtn.style.position = "absolute";
+            backToTopBtn.style.bottom =
+                    footer.offsetHeight + 20 + "px";
+      } else {
+            // normal
+            backToTopBtn.style.position = "fixed";
+            backToTopBtn.style.bottom = "30px";
+      }
+  });
 </script>
