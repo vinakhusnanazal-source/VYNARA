@@ -392,8 +392,7 @@ footer small {
       transform: translateY(-4px);
       box-shadow: 0 14px 28px rgba(0,0,0,0.12);
 }
-/* rapikan jarak akhir materi */
-/* hentikan ruang berlebih di akhir materi */
+/* ===== RAPATKAN KONTEN KE NAVIGASI BAWAH ===== */
 .materi {
   padding-bottom: 0 !important;
 }
@@ -401,29 +400,30 @@ footer small {
 .materi-card:last-child {
   margin-bottom: 0;
 }
-.nav-bawah {
-      display: flex;
-      justify-content: space-between; /* KIRI & KANAN */
-  align-items: center;
-      margin-top: 1rem;
-      margin-buttom: 3rem;
-      padding-buttom: 0 !important;
-}
+
+/* ===== NAVIGASI BAWAH ===== */
 .nav-bawah {
   display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
+  justify-content: space-between; /* kiri & kanan */
+  align-items: center;
+
+  margin-top: 1rem !important;    /* dekat card terakhir */
+  margin-bottom: 3rem;            /* ruang kosong di BAWAH tombol */
 
   padding-top: 0;
-  margin-top: 1rem !important;
+  padding-bottom: 0;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
+
   .materi-card:last-child {
     margin-bottom: 0.8rem;
   }
 
   .nav-bawah {
-    margin-bottom: 0.8 !important;
-    padding-bottom: 3.5rem;  /* ruang aman dari bottom layar */
+    margin-top: 0.8rem !important;
+    margin-bottom: 3.5rem;  /* ruang aman dari bottom layar */
   }
 }
 /* kiri */
