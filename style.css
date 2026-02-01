@@ -395,7 +395,7 @@ footer small {
 /* rapikan jarak akhir materi */
 /* hentikan ruang berlebih di akhir materi */
 .materi {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .materi-card:last-child {
@@ -406,7 +406,8 @@ footer small {
       justify-content: space-between; /* KIRI & KANAN */
   align-items: center;
       margin-top: 1rem;
-      margin-buttom: 1.5rem;
+      margin-buttom: 0 !important;
+      padding-buttom: 0 !important;
 }
 .nav-bawah {
   display: flex;
@@ -421,7 +422,8 @@ footer small {
   }
 
   .nav-bawah {
-    padding-bottom: 1rem;  /* ruang aman dari bottom layar */
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;  /* ruang aman dari bottom layar */
   }
 }
 /* kiri */
