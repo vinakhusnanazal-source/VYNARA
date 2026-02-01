@@ -80,6 +80,18 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* bikin konten terasa full */
+  .hero,
+  .materi {
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  /* hero card full-width visual */
+  .hero-card {
+      max-width: 100%;
+      padding: 2rem 1.5rem;
+  }
 
       /* khusus halaman materi */
       .nav-action .menu-btn {
