@@ -332,15 +332,21 @@ footer small {
       transform: translateY(-4px);
       box-shadow: 0 14px 28px rgba(0,0,0,0.12);
 }
+/* rapikan jarak akhir materi */
+.materi {
+    padding-bottom: 1.5rem; /* sebelumnya 3rem */
+}
+
+/* pastikan card terakhir benar-benar dekat */
 .materi-card:last-child {
-      margin-bottom: 1.2rem;   /* ⬅️ lebih dekat ke tombol */
+    margin-bottom: 0.8rem;
 }
 .nav-bawah {
       display: flex;
       justify-content: space-between; /* KIRI & KANAN */
   align-items: center;
       margin-top: 1rem;
-      margin-buttom: 2rem;
+      margin-buttom: 1.5rem;
 }
 
 /* kiri */
