@@ -399,14 +399,14 @@ footer small {
 }
 
 .materi-card:last-child {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 }
 .nav-bawah {
       display: flex;
       justify-content: space-between; /* KIRI & KANAN */
   align-items: center;
       margin-top: 1rem;
-      margin-buttom: 0 !important;
+      margin-buttom: 3rem;
       padding-buttom: 0 !important;
 }
 .nav-bawah {
@@ -415,15 +415,15 @@ footer small {
   gap: 1rem;
 
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 1rem !important;
 @media (max-width: 768px) {
   .materi-card:last-child {
     margin-bottom: 0.8rem;
   }
 
   .nav-bawah {
-    margin-bottom: 0;
-    padding-bottom: 0.5rem;  /* ruang aman dari bottom layar */
+    margin-bottom: 0.8 !important;
+    padding-bottom: 3.5rem;  /* ruang aman dari bottom layar */
   }
 }
 /* kiri */
