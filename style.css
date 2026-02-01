@@ -25,6 +25,10 @@ body {
     align-items: center;
     background: linear-gradient(90deg, #1b4332, #40916c);
 }
+.back-btn {
+      margin-right: auto;      /* geser dari pinggir kanan */
+      margin-left: 2rem;       /* jarak dari logo */
+}
 
 .logo {
     display: flex;
