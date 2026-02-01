@@ -407,7 +407,6 @@ footer small {
 ================================ */
 .materi,
 .nav-bawah {
-  max-width: 960px;        /* samakan dengan lebar card */
   margin-left: auto;
   margin-right: auto;
 }
@@ -421,20 +420,10 @@ footer small {
   align-items: center;
   gap: 1rem;
 
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
 
-/* ===============================
-   TOMBOL
-================================ */
-.menu-btn {
-  padding: 0.6rem 1.1rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
 
 /* ===============================
    MOBILE (OPS I 2: TENGAH)
@@ -443,7 +432,7 @@ footer small {
 
   .nav-bawah {
     justify-content: center; /* TENGAH */
-    padding: 0 1rem;
+    padding: 0;
     margin-top: 0;
     margin-bottom: 3.5rem;  /* aman dari bottom layar */
   }
