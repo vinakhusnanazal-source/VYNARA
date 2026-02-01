@@ -29,6 +29,16 @@ body {
       margin-right: auto;      /* geser dari pinggir kanan */
       margin-left: 2rem;       /* jarak dari logo */
 }
+/* container tombol di navbar */
+.nav-action {
+      display: flex;
+      justify-content: flex-end;
+}
+
+/* khusus halaman materi */
+.nav-action .menu-btn {
+      margin-right: 1.5rem;   /* TIDAK mepet kanan */
+}
 
 .logo {
     display: flex;
