@@ -404,8 +404,9 @@ footer small {
 /* ===== NAVIGASI BAWAH ===== */
 .nav-bawah {
   display: flex;
-  justify-content: space-between; /* kiri & kanan */
+  justify-content: flex-end; /* kiri & kanan */
   align-items: center;
+  gap: 1rem:
 
   margin-top: 1rem !important;    /* dekat card terakhir */
   margin-bottom: 3rem;            /* ruang kosong di BAWAH tombol */
@@ -422,7 +423,7 @@ footer small {
   }
 
   .nav-bawah {
-    margin-top: 0.8rem !important;
+    margin-top: 0 !important;
     margin-bottom: 3.5rem;  /* ruang aman dari bottom layar */
   }
 }
